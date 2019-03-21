@@ -7,7 +7,7 @@
 [SeoMaestro](https://modules.processwire.com/modules/seo-maestro/)
 
 ### How To Install
-1. Download the [zip file](https://github.com/rafaoski/site-uk3-zigzag/archive/master.zip) at Github or clone directly the repo: ```git clone https://github.com/rafaoski/site-uk3.git```
+1. Download the [zip file](https://github.com/rafaoski/site-uk3-zigzag/archive/master.zip) at Github or clone directly the repo: ```git clone https://github.com/rafaoski/site-uk3-zigzag.git```
 2. Extract the folder **site-uk3-zigzag** into a fresh ProcessWire installation root folder.
 3. During the installation of ProcessWire, choose the profile **Uikit3 / Zigzag Profile**.
 
