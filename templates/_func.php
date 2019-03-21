@@ -37,7 +37,6 @@ function toAny($opt = ['t','f','g-p','l','r','e','g-m'])
       return $out;
 }
 
-
 /**
  *
  * @param PageArray $external_links
