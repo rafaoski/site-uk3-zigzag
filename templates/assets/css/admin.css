@@ -1,0 +1,36 @@
+/* @media only screen and (max-width: 1024px) {
+    .gutter.gutter-horizontal {
+      display: none;
+    }
+    .aos_col_left {
+      width: 100% !important;
+    }
+    .aos_col_right {
+      width: 100% !important;
+    }
+  } */
+
+/* Small Bottom Margin => All Pages */
+.Inputfield_title, .Inputfield_headline, .Inputfield_summary, .Inputfield_background_size, .Inputfield_body, .Inputfield_sidebar {
+  margin-bottom: 15px;
+}
+
+/* Small Bottom Margin => Blog Post Page */
+body.ProcessPageEdit-template-blog-post form ul > .Inputfield_date, .Inputfield_categories {
+  margin-bottom: 15px;
+}
+
+/* Small Bottom Margin => Contact Page */
+body.ProcessPageEdit-template-contact form ul > .Inputfield_adress, .Inputfield_phone, .Inputfield_e_mail {
+    margin-bottom: 15px;
+}
+
+/* Small Margin => Options Page */
+body.ProcessPageEdit-template-options form ul > .Inputfield_select_options {
+  margin: 15px 0;
+}
+
+
+body.ProcessPageEdit-template-options form ul > .Inputfield_external_link, .Inputfield_text_1, .Inputfield_text_2, .Inputfield_checkbox {
+  margin-bottom: 15px;
+}

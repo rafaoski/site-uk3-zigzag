@@ -1,0 +1,10 @@
+// Headings
+@mixin hook-heading-hero(){
+	color: $dark_cyan;
+}
+@mixin hook-base-heading(){
+	color: $red;
+	// font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	// font-family: 'Roboto', sans-serif;
+	font-family: 'Plaster', cursive;
+}

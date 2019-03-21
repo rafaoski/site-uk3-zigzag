@@ -1,0 +1,209 @@
+/* BASIC HTML ELEMENTS */
+h1, h2, h3, h4, h5, span {
+	// You can also uncomment ( "mixins/_headings" ) inside _mxins.scss to change the fonts or colors for the headings
+	// font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	// font-family: 'Roboto', sans-serif;
+	// font-family: 'Plaster', cursive;
+	color: $heavy_black;
+	letter-spacing: 3px;
+}
+
+blockquote {
+	font-size: 1.5rem;
+	color: $cadetblue;
+}
+
+ul, dd, li {
+	color: darken($dark_gray, 30%);
+}
+
+a {
+	color: $tabasco;
+	font-size: 1.4rem;
+	letter-spacing: 3px;
+	/* If you want to exclude a given element, add to the link <a class='not-hover'>  ( like in file categories.php before card ) */
+	&:hover:not(.not-hover) {
+		background: $black;
+		color: $white;
+		transition: all .3s ease;
+	}
+}
+
+/* SVG EFFECT */
+.svg-lighten {
+	filter: invert(80%);
+  transition: all .3s ease;
+}
+.svg-lighten:hover {
+  filter: invert(100%);
+}
+/* HOVER EFFECT */
+.hover {
+  opacity: 1;
+  transition: all .3s ease;
+}
+.hover:hover {
+  opacity: 0.7;
+}
+
+/* CONTENT SUMMARY */
+.uk-h1, .uk-h2, .uk-h3, .uk-h4 {
+	// You can also uncomment ( "mixins/_headings" ) inside _mxins.scss to change the fonts or colors for the headings
+	color: $heavy_black;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 3px;
+}
+
+/* MASTHEAD */
+#masthead {
+  /* primary nav is not visible, so it needs some padding here */
+  padding-bottom: 20px;
+  @include md { // 992px window width and more
+    /* primary nav is not visible, so it needs some padding here */
+    padding-bottom: 0;
+  }
+}
+#masthead-logo span {
+	font-family: 'Plaster', cursive;
+	font-size: 3rem;
+	letter-spacing: 5px;
+	color: $red;
+	@include md { // 992px window width and more
+		font-size: 7rem;
+		letter-spacing: 15px;
+	}
+}
+#masthead-logo img {
+	/* image for masthead logo */
+	width: 100px;
+}
+
+/* MASTHEAD TAGLINE */
+#masthead-tagline {
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 3px;
+	@include md { // 992px window width and more
+		letter-spacing: 5px;
+	}
+}
+/* CONTENT SUMMARY */
+#content-summary {
+	font-family: 'Roboto', sans-serif;
+	color: $darken;
+	font-size: 1.5rem;
+	letter-spacing: 5px;
+}
+
+/* CONTENT */
+#content, p {
+	font-family: 'Roboto', sans-serif;
+	line-height: 1.7;
+	letter-spacing: 2px;
+	color: $soft_black;
+	font-size: 1.2rem;
+}
+
+#edit-page {
+	/* the edit page link that appears when page is editable */
+	position: absolute;
+	top: 10px;
+	right: 10px
+}
+
+#offcanvas-toggle {
+	/* the hamburger icon that toggles the mobile navigation */
+	position: absolute;
+	top: 10px;
+	left: 15px;
+}
+
+#offcanvas-nav .uk-search-input {
+	/* the search box that appears in offcanvas nav */
+	width: 100%;
+}
+
+img.uk-comment-avatar {
+	/* avatar that appears in comments */
+	width: 60px;
+	height: 60px;
+}
+
+.pw-debug {
+	background: $black;
+	font-size: 1rem;
+	border: none;
+	padding: 30px 10px;
+}
+
+/****************************************************************
+ * Bodycopy text and images
+ *
+ * These styles are good to have on any ProcessWire site
+ *
+ */
+
+.align_left {
+  /* display images in center rather than aligned */
+  display: block;
+  float: none;
+  margin: 1em auto;
+  max-width: 100%;
+    @include md { // 992px window width and more
+    	float: left;
+    	margin: 0 1em 0.5em 0;
+    	position: relative;
+    	top: 0.5em;
+    	max-width: 50%;
+    }
+}
+
+.align_right {
+  /* display images in center rather than aligned */
+  display: block;
+  float: none;
+  margin: 1em auto;
+  max-width: 100%;
+    @include md { // 992px window width and more
+    	float: right;
+    	margin: 0 0 0.5em 1em;
+    	max-width: 50%;
+  }
+}
+
+.align_center {
+  /* for images placed in rich text editor */
+  display: block;
+  float: none;
+  margin: 1em auto;
+  max-width: 100%;
+    @include md { // 992px window width and more
+    	display: block;
+    	margin: 1em auto;
+    	position: relative;
+    	top: 0.5em;
+    }
+}
+
+figure {
+  /* figure for image that has a caption */
+    display: block;
+    text-align: center;
+      @include md { // 992px window width and more
+      	display: table;
+      	margin: 1em 0;
+    }
+}
+
+figure figcaption {
+  /* display caption text below image contained to image width */
+  display: block;
+  text-align: center;
+  color: $gray;
+    @include md { // 992px window width and more
+    	display: table-caption;
+    	caption-side: bottom;
+    	font-size: 13px;
+    	line-height: 1.4em;
+    	margin-top: 5px;
+  }
+}

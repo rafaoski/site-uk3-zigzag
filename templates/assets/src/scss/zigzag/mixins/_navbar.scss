@@ -1,0 +1,48 @@
+@mixin hook-navbar-nav-item() {
+	color: $darken;
+  font-size: 1.1rem;
+  letter-spacing: 5px;
+	position: relative;
+	text-transform: $navbar-nav-item-text-transform;
+	transition-property: color, background-color;
+	&::before {
+			content: "";
+			position: absolute;
+			top:  0;
+			left: 0;
+			right: 100%;
+			border-top: 2px solid $dark_gray;
+			transition: right 0.3s ease-out;
+	}
+}
+// Header Navbar Item Hover
+@mixin hook-navbar-nav-item-hover(){
+	color: $alice;
+	&::before { right: 0; }
+}
+// Header Navbar Item Active
+@mixin hook-navbar-nav-item-active(){
+    color: $tabasco;
+		border-bottom: 2px solid $dark_gray;
+}
+// Header Navbar Dropdown
+@mixin hook-navbar-dropdown(){
+	 box-shadow: $navbar-dropdown-box-shadow;
+	 background: $nav_drop;
+	 border-bottom: 5px solid rgba($dark_gray, .5);
+}
+// Header Navbar Dropdown Item
+@mixin hook-navbar-dropdown-nav-item(){
+  font-size: 1.2rem;
+  letter-spacing: 5px;
+}
+
+// Header Navbar Dropdown Item Hover
+@mixin hook-navbar-dropdown-nav-item-hover(){
+  color: $tabasco;
+}
+
+// Header Navbar Dropdown Item Active
+@mixin hook-navbar-dropdown-nav-item-active(){
+		 color: $tabasco;
+}

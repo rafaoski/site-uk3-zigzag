@@ -1,0 +1,13 @@
+// Nav Default ( Sidebar Items )
+@mixin hook-nav-default(){
+    font-size: 1.3rem;
+}
+
+@mixin hook-nav-default-header(){
+    color: $darken;
+    font-size: 1.4rem;
+}
+
+@mixin hook-nav-default-item-active(){
+    color: $global-link-color;
+}

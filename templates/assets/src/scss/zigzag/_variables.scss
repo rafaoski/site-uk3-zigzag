@@ -1,0 +1,70 @@
+// 1. Your custom UIKIT variables and variable overwrites
+// node_modules/uikit/src/scss/variables-theme.scss
+
+// 2. Set Custom Colors
+$html_background: #242323;
+$tabasco: #FF5733;
+$white: #ebebeb;
+$alice: #c2c2c2;
+$black: black;
+$soft_black: rgba(36, 42, 42, 0.76);
+$heavy_black: #1a1818;
+$nav_drop: #0f0f0ff0;
+$bisque: bisque;
+$darken: #3e3b3b;
+$gray: #777;
+$dark_gray: darkgray;
+$dark_cyan: #008B8B;
+$tomato: tomato;
+$red: red;
+$orange: #DA7D02;
+$cadetblue: cadetblue;
+
+// 3. Overwrite default Uikit colors
+// $global-background: $html_background;
+// $global-color: lighten($dark_gray, 10%);
+$global-link-color: $tabasco;
+// $global-link-hover-color: rgba($tabasco, .7);
+
+// 4. Nav Sub List Color
+$nav-default-sublist-item-active-color: $tabasco;
+// $nav-default-item-color: $global-muted-color !default;
+$nav-default-item-hover-color: $cadetblue;
+// $nav-default-item-active-color: $global-emphasis-color !default;
+// $nav-default-header-color: $global-emphasis-color !default;
+// $nav-default-divider-border-width: $global-border-width !default;
+// $nav-default-divider-border: $global-border !default;
+// $nav-default-sublist-item-color: $global-muted-color !default;
+$nav-default-sublist-item-hover-color: $tabasco;
+// $nav-default-sublist-item-active-color: $global-emphasis-color !default;
+
+
+// 5. Heading Hero
+$heading-hero-font-size-l: 5.5rem;
+$heading-hero-line-height-l: 1;
+$heading-hero-font-size-m: $heading-hero-font-size-l * 0.75;
+$heading-hero-line-height-m: 1;
+$heading-hero-font-size: $heading-hero-font-size-l * 0.4;
+$heading-hero-line-height: 1.1;
+
+// 6. Breadcrumb
+$breadcrumb-item-font-size: 1.5rem;
+
+
+// 7. Section Background
+// $section-default-background: $heavy_black;
+// $section-muted-background: darken($dark_gray, 30%);
+
+// 8. Change Background Muted
+// $background-muted-background: darken($dark_gray, 40%);
+
+// 9. Buttons
+// $button-default-background: darken($dark_gray, 40%);
+// $button-default-color: $alice;
+// $button-default-hover-background: darken($dark_gray, 70%);
+// $button-default-hover-color: $tomato;
+
+// 10. Overlay
+// $overlay-default-background: rgba($heavy_black, 0.8);
+// $overlay-default-background: $soft_black;
+// $overlay-primary-background: rgba($black, 0.8);

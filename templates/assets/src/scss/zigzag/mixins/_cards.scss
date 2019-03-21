@@ -1,0 +1,23 @@
+// Default Cards
+@mixin hook-card-default() {
+	// background: rgba($black, .8);
+	// color: $alice;
+  transition: $transition-duration;
+}
+
+@mixin hook-card-default-title(){
+	color: $tabasco;
+}
+
+// Default Card Hover
+@mixin hook-card-default-hover() {
+	background: $white;
+	color: $alice;
+   h3 {
+		  color: $alice;
+		 	background: $black;
+	 }
+    p {
+        color: $gray;
+    }
+}

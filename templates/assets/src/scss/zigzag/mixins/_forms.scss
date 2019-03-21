@@ -1,0 +1,27 @@
+// Form
+@mixin hook-form(){
+    border: $form-border-width solid $gray;
+    transition: 0.2s ease-in-out;
+    transition-property: color, background-color, border;
+		background-color: darken($gray, 30);
+		color: $bisque;
+}
+@mixin hook-form-focus(){
+    border-color: $alice;
+    border-style: $form-blank-focus-border-style;
+		background-color: darken($gray, 30);
+		color: $tabasco;
+}
+
+// Comments Form
+@mixin hook-comment-primary(){
+    padding: $comment-primary-padding;
+    background-color: rgba($black, .5);
+		label {
+					 color: lighten($gray, 20);
+			 }
+    input, textarea {
+        background-color: darken($gray, 40);
+        border-color: darken($gray, 10);
+    }
+}
