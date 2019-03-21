@@ -213,7 +213,7 @@ gwCode($gWebmaster); // Google Webmaster Tools Werification Code
 <?php endif;
 // Google Fonts https://fonts.google.com/
 googleFonts('Plaster|Roboto:300');
-// Google Analytics Tracking Code ( /options/advanced-options/ga-code/ )
+// Google Analytics Tracking Code
 gaCode($gAnalytics);
 ?>
 <pw-region id='bottom-region'></pw-region>
