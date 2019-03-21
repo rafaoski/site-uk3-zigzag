@@ -12,7 +12,7 @@ $blogPost = $blog->child();
 		<?=setting('in-blog')?>
 	</h3>
 	<?= str_replace('uk-light', 'uk-dark', ukBlogPost($blogPost));?>
-	<p class='uk-text-center uk-light'>
+	<p class='uk-text-center'>
 		<a class='uk-button uk-button-text uk-text-large' href='<?=$blog->url?>'>
 			<?=ukIcon('arrow-right')?>
 			<?=setting('more-blog')?>
