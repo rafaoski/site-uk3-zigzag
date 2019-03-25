@@ -807,7 +807,7 @@ function ukBlogPost(Page $page, $options = array()) {
 	);
 
 	$options = _ukMergeOptions($defaults, $options);
-	$blog_image = $page->images ? $page->images->first() : '';
+	$blog_image = count($page->images) ? $page->images->first()->url : '';
 	$background_size = $page->background_size ? 'contain' : 'cover';
 	$title = $page->title;
 	$summary = $page->summary;
@@ -850,9 +850,8 @@ function ukBlogPost(Page $page, $options = array()) {
 
 	if($options['bgImage']) {
 		$bg_class = "uk-background-$background_size uk-background-center-left uk-background-fixed uk-inline";
-		$style = "style='background-image: url($blog_image->url);'";
+		$style = "style='background-image: url($blog_image);'";
 		$dat_img = 'data-uk-img';
-		$bl_img = $blog_image->url;
 		$overlay = '<div class="uk-overlay-primary uk-position-cover"></div>';
 		$overlay_class = 'uk-overlay';
 	} else {
