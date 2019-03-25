@@ -793,6 +793,9 @@ function ukDescriptionListPages(PageArray $items, $options = array()) {
  */
 function ukBlogPost(Page $page, $options = array()) {
 
+// Do not display a post if it is not there
+	if($page == '') return;
+
 	$defaults = array(
 		'summarize' => null, // Display blog post summary rather than full post? (null=auto-detect)
 		'metaIcon' => 'info',
