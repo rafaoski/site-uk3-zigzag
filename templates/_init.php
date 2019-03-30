@@ -15,6 +15,9 @@ setting([
         // 'wire-datetime' => datetime()->date('ts'),
 // GET Home Page
     'home' => pages()->get('/'),
+// Home Sections    
+    'enable-sections' => false,
+    'save-subscribent-log' => false,
 // Custom CSS Classes
     'body-classes' => WireArray([
         'template-' . page()->template->name,
