@@ -35,7 +35,7 @@ $blogPost = $blog->child();
 	foreach ($sections as $key => $section): ?>
 	<section id='section-<?= $key ?>' class='section-<?= $section ?> uk-margin-small-top uk-margin-small-bottom'>
 
-		<h3 class="uk-h1 uk-text-uppercase uk-heading-bullet uk-margin" style='font-family: 'Roboto', sans-serif;'>
+		<h3 class="uk-h1 uk-text-uppercase uk-heading-bullet uk-margin" style="font-family: 'Roboto', sans-serif;">
 			<?= $section ?>
 		</h3>
 
