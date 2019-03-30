@@ -10,6 +10,8 @@ $gAnalytics = setting('ga-code') ? pages('options')->text_2 : '';
 // IMAGES Get First Image ( https://processwire.com/docs/fields/images/ )
 $image = page()->images ? page()->images->first() : '';
 $background_size = page()->background_size ? 'contain' : 'cover';
+// Container Size
+$container_size = setting('enable-sections') ? 'uk-container-expand' : '';
 ?>
 <!DOCTYPE html>
 <html lang='<?=setting('lang-code')?>'>
@@ -97,7 +99,7 @@ gwCode($gWebmaster); // Google Webmaster Tools Werification Code
 	</header><!-- HEADER -->
 
 	<!-- MAIN CONTENT -->
-	<main id='main' class='uk-container uk-margin uk-margin-large-bottom'>
+	<main id='main' class='uk-container <?= $container_size ?> uk-margin uk-margin-large-bottom'>
 		<?php if(page()->parent->id > setting('home')->id) echo ukBreadcrumb(page(), [ 'class' => 'uk-visible@m' ]); ?>
 		<div class='uk-grid-large' data-uk-grid>
 			<div id='content' class='uk-width-expand'>
