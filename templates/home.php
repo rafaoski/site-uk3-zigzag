@@ -29,6 +29,7 @@ $blogPost = $blog->child();
 		'team',
 		'info',
 		'testimonials',
+		'price',
 		'subscribe'
 	];
 	// Start Sections Loop

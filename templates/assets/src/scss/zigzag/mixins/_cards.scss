@@ -1,6 +1,6 @@
 // Default Cards
 @mixin hook-card-default() {
-	// background: rgba($black, .8);
+	background: darken($white, 5%);
 	// color: $alice;
   transition: $transition-duration;
 }
@@ -11,7 +11,7 @@
 
 // Default Card Hover
 @mixin hook-card-default-hover() {
-	background: $white;
+	background: $alice;
 	color: $alice;
    h3 {
 		  color: $alice;

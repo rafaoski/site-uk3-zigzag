@@ -32,7 +32,7 @@
     ];
     foreach ($services as $key => $service) : ?>
       <!-- SERVICE ITEM -->
-      <div class='service-item <?= sanitizer()->pageName($service); ?>'>
+      <div class='service-item <?= sanitizer()->pageName($service); ?> uk-margin-small'>
         <a class="uk-link-reset not-hover uk-card uk-card-body uk-card-default uk-card-hover uk-text-left" href="#">
             <span uk-icon="icon: <?= $icons[$key] ?>; ratio: 2.2" class="uk-text-warning uk-icon"></span>
             <h3 class="uk-margin-small uk-h4"><?= $service ?></h3>

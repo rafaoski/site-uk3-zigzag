@@ -1,5 +1,8 @@
 <?php namespace ProcessWire;
 
+// Subscribe Text
+$subscribe_heading = __('Subscribe to the %s newsletter');
+
 // Your E-Mail
 $mail_to = 'youremail@gmail.com';
 
@@ -85,13 +88,16 @@ if ($session->Message) {
 }
 ?>
 
+<h3 class='uk-h2'><?= sprintf( $subscribe_heading, setting('site-name') ) ?></h3>
+
 <form name='subscribeForm' id='subscribe-form' class='subscribe-form uk-text-center' action='./' method='post'>
   <!-- CSRF -->
     <input type='hidden' id='_post_token' name='<?=$token_name?>' value='<?=$token_value?>'>
 <!-- E-MAIL -->
     <input class='uk-input uk-form-width-large uk-form-large uk-width-2-3@s uk-text-center'
-           style='font-size: 5rem;  height: 100px; border: 2px solid #f1f1f1; border-radius: 90px;'
+           style='font-size: 3rem; height: 80px; border: 2px solid #f1f1f1; border-radius: 90px;'
            name='email' placeholder='<?= $label_email ?>' type='email' required>
+    <br>
     <br>
 <!-- ACCEPT PRIVACY POLICY -->
     <label class='label-check'>
